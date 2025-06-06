@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repo Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+    <h1>GitHub Repo Analyzer</h1>
+    <form id="repo-form">
+        <input type="text" id="repo-url" placeholder="Enter GitHub repo URL (e.g. https://github.com/user/repo)" required>
+        <button type="submit">Analyze</button>
+    </form>
+    <div id="error-message"></div>
+    <div id="repo-info" class="card"></div>
+    <div id="contributors" class="card"></div>
+    <div id="commit-activity" class="card">
+        <canvas id="commitChart"></canvas>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
